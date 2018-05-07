@@ -49,13 +49,13 @@ const Person = styled.div`
   }
 `;
 
-const StyledListItem = styled(ListItem)`
+const StyledListItem = styled(ListItem) `
   font-size: 1em !important;
   color: black;
   margin-bottom: 25px;
 `;
 
-const StyledCol = styled(Col)`
+const StyledCol = styled(Col) `
   display: flex;
   align-items: center;
   justify-content: center;
@@ -124,14 +124,17 @@ export default class Presentation extends React.Component {
               A better way to get <em>BUSSD</em> in San Diego
             </StyledListItem>
             <StyledListItem>
+              Uses real time data from the San Diego Metropolitan Transit System
+            </StyledListItem>
+            <StyledListItem>
               Current methods of getting <em>BUSSD</em> in San Diego are <strong>insufficient</strong> and{' '}
               <strong>weak</strong>
             </StyledListItem>
             <StyledListItem>
-              No existing way to get <em>BUSSD</em> in real-time on the go, from your <strong>pocket computer</strong>
+              No efficient way to get <em>BUSSD</em> in real-time on the go, from your <strong>pocket computer</strong>
             </StyledListItem>
             <StyledListItem>
-              A few existing apps that let you get <em>BUSSD</em> : <strong>MTS, Transit</strong>
+              A few existing apps that let you get <em>BUSSD</em> : <strong>MTS, Moovit</strong>
             </StyledListItem>
           </List>
         </Slide>
@@ -168,7 +171,7 @@ export default class Presentation extends React.Component {
           <Heading size={5} textColor="secondary" caps>
             <em>BUSSD</em> From the Back End
           </Heading>
-          <Image src={images.erd} />
+          <Image style={{ maxWidth: '70%' }} src={images.erd} />
         </Slide>
 
         <Slide transition={['fade']} bgColor="primary" textColor="tertiary">
@@ -200,20 +203,40 @@ export default class Presentation extends React.Component {
         <Slide transition={['fade']} bgColor="secondary" textColor="primary">
           <BlockQuote>
             <Quote>
-              Now You Too Are Gonna Get <em>BUSSD</em>
+              Are You Ready To Get <em>BUSSD</em>?
             </Quote>
             <Cite>Demo</Cite>
           </BlockQuote>
         </Slide>
 
-        <Slide transition={['fade']} bgColor="primary" textColor="secondary">
+        <Slide transition={['fade']} bgColor="primary" textColor="tertiary">
+          <Heading size={5} textColor="secondary" caps>
+            Features for the future
+          </Heading>
+          <List>
+            <StyledListItem>
+              Route planning
+            </StyledListItem>
+            <StyledListItem>
+              Native Mobile App
+            </StyledListItem>
+            <StyledListItem>
+              Unit/E2E Testing
+            </StyledListItem>
+            <StyledListItem>
+              Improve User Interface
+            </StyledListItem>
+          </List>
+        </Slide>
+
+        {/* <Slide transition={['fade']} bgColor="primary" textColor="secondary">
           <h2>
-            Get <em>BUSSD</em> For Our Homeboy
+            Dedicated to ...
           </h2>
           <Image src={images.ogun} />
           <h2>Ogun TIGLI</h2>
           <h3>Instructor, 2018 - 2018</h3>
-        </Slide>
+        </Slide> */}
       </Deck>
     );
   }
