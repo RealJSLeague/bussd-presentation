@@ -85,7 +85,7 @@ export default class Presentation extends React.Component {
             <Row>
               <Col xs={3}>
                 <Person>
-                  <img src="https://s3.us-east-2.amazonaws.com/garethbk-portfolio/misc/gbk-chicken.jpg" />
+                  <img src="https://s3-us-west-1.amazonaws.com/dh-portfolio-1/Optimized-IMG-9721.JPG" />
                   <h3>David</h3>
                 </Person>
               </Col>
